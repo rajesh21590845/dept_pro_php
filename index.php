@@ -40,11 +40,21 @@ include 'db.php';
             justify-content: center;
         }
 
-        .logo-img img, .logo-img2 img {
+        .logo-img img{
+            height: 70px;
+            width: auto;
+            border-radius: 20px;
+            background-color:white;
+            padding: 5px;
+        }
+        
+        
+        
+        .logo-img2 img {
             height: 70px;
             width: auto;
             border-radius: 50px;
-            background-color: white;
+            background-color:white;
             padding: 5px;
         }
 
@@ -204,7 +214,7 @@ include 'db.php';
         }
 
         .news-bar {
-            background-color: #ff6b6b;
+            background-color:rgb(255, 161, 9);
             color: white;
             padding: 10px;
             text-align: center;
@@ -228,6 +238,140 @@ include 'db.php';
                 transform: translateX(-100%);
             }
         }
+
+        .it-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.it-dept-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.it-side-box {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  background: #0a1b4c;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-blue {
+  color: #0a1b4c;
+}
+
+.text-orange {
+  color: #f7a106;
+}
+
+.it-description {
+  font-size: 18px;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.box-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f7a106;
+  text-align: center;
+}
+
+.box-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+}
+
+.box-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.academic-notes-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.academic-schedule-section,
+.notes-section {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  flex: 1;
+  min-width: 280px;
+  max-width: 48%;
+}
+
+.academic-schedule-section h4,
+.notes-section h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.schedule-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.schedule-list li {
+  margin-bottom: 10px;
+}
+
+.notes-section p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.notes-link {
+  display: inline-block;
+  background-color: #fd7e14;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.notes-link:hover {
+  background-color: #e96c08;
+}
+
+/* Reuse blue and orange styles */
+.text-blue {
+  color: #007bff;
+}
+
+.text-orange {
+  color: #fd7e14;
+}
+
 
 
 
@@ -345,18 +489,68 @@ include 'db.php';
             transform: translateY(-10px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
-
         .footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            animation: fadeInUp 1s ease;
-        }
+  background-color: #0a1b4c;
+  color: white;
+  padding: 40px 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-        .footer p {
-            margin: 0;
-        }
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px 20px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-bottom: 2px solid #f7a106;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  background-color: #081737;
+  color: #f7a106;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+}
+
+.footer-bottom a {
+  color: #f7a106;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom .scroll-top {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.footer-bottom .scroll-top a {
+  color: #f7a106;
+  text-decoration: none;
+}
     </style>
 </head>
 <body>
@@ -411,11 +605,78 @@ include 'db.php';
             <p>Explore question papers, tools & more!</p>
         </div>
     </div>
+    <img src="assets/Frame6.png" alt="Decorative Frame" />
     
     <!-- News bar -->
     <div class="news-bar">
+
         <p>Latest News: New updates coming soon! Stay tuned for exciting features.</p>
     </div>
+    <section class="it-wrapper">
+  <div class="it-dept-section">
+    <h4>
+      <span class="text-blue">Welcome to</span>
+      <span class="text-orange">Information Technology</span>
+    </h4>
+    <p class="it-description">
+      Information Technology (IT) is the application of technology to solve organizational and business problems. 
+      Information Technology is essential for a company to ensure the efficiency and security of information systems. 
+      Demand for professionals in the Information Technology field is high and growing, and people entering the field 
+      have a range of career paths to choose from.
+    </p>
+    <p class="it-description">
+      At GCEE, the Department of Information Technology is committed to producing high-profile, innovative IT professionals. 
+      The department has four well-equipped software laboratories with around 100 computers and a hardware laboratory with 
+      all essential equipment. Internet facility is provided for the students in the software laboratories. The department 
+      is enabled with WiFi facility to access the internet.
+    </p>
+  </div>
+
+
+
+
+  <div class="it-side-box">
+    <!-- Replace this content with what you want in the box -->
+    <h5 class="box-title">Quick Info</h5>
+    <ul class="box-list">
+      <li>💻 100+ Computers</li>
+      <li>📶 WiFi Enabled Campus</li>
+      <li>🛠️ Hardware Lab</li>
+      <li>🌐 Internet Facilities</li>
+    </ul>
+  </div>
+</section>
+<section class="academic-notes-wrapper">
+  <!-- Left Side: Academic Schedule -->
+  <div class="academic-schedule-section">
+    <h4>
+      <span class="text-blue">Academic</span>
+      <span class="text-orange">Schedule</span>
+    </h4>
+    <div class="academic-schedule-box">
+      <ul class="schedule-list">
+        <li><strong>🗓️ Odd Semester Schedule:</strong> July – November</li>
+        <li><strong>🗓️ Even Semester Schedule:</strong> January – May</li>
+        <li><strong>📚 Internal Assessment:</strong> 3 per semester</li>
+        <li><strong>📄 Model Exams:</strong> Conducted before end-semester</li>
+        <li><strong>📌 University Exams:</strong> November & May</li>
+        <li><strong>📥 Academic Calendar:</strong> <a href="#">Download PDF</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right Side: Study Notes -->
+  <div class="notes-section">
+    <h4>
+      <span class="text-blue">Study</span>
+      <span class="text-orange">Notes</span>
+    </h4>
+    <p>
+      Notes are vital tools that help students review concepts quickly and retain information more effectively. At GCEE, curated notes support students in understanding key topics, preparing for exams, and enhancing academic performance.
+    </p>
+    <a href="papers.php" class="notes-link">📂 Refer Notes Here</a>
+  </div>
+</section>
 
 <!--
     <section class="hero">
@@ -434,6 +695,46 @@ include 'db.php';
         </div>
     </section>
     -->
+    <div>
+        <p>
+        <img src="assets/bg.png" alt="Main Image" class="bg-image" ,align="rigth">
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br><center>
+        <img src="assets/bg1.png " alt="Main Image" class="bg-image"></center>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        .</br>
+        <img src="assets/bg.png" alt="Main Image" class="bg-image" algin="center">
+        
+        
+        
+        
+
+
+        </p>
+    </div>
 
     <script>
         const links = document.querySelectorAll('.navbar a');
@@ -445,9 +746,39 @@ include 'db.php';
         });
     </script>
 
-    <footer class="footer">
-        <p>&copy; 2024 Question Paper Collection. All rights reserved.</p>
-    </footer>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Locate Us</h4>
+      <p>GCEE in Google Map</p>
+      <p>How to Reach GCEE</p>
+    </div>
+    <div class="footer-column">
+      <h4>Downloads</h4>
+      <p>Academic Schedule</p>
+      <p>Staff Forms</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <!-- Add your links or keep empty -->
+    </div>
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>Government College of Engineering (Autonomous), IRTT,</p>
+      <p>Erode – 638 316, Tamilnadu, India</p>
+      <p>Phone: (0424) 253 9799</p>
+      <p>Email: gceerodeprincipal@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      Designed & Maintained by <a href="#" target="_blank">GCEE Website Administrators, Department of IT, GCE, Erode</a>
+    </p>
+    <p>© GCEE – All Rights Reserved | Best viewed in Full HD</p>
+    <p class="scroll-top"><a href="#">^</a></p>
+  </div>
+</footer>
 
 </body>
 </html>

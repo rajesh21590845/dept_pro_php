@@ -252,6 +252,70 @@ if (isset($_GET['search'])) {
         .back-btn:hover {
             background-color: #e55a4d;
         }
+
+        .footer {
+  background-color: #0a1b4c;
+  color: white;
+  padding: 40px 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px 20px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-bottom: 2px solid #f7a106;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-column p {
+  margin: 6px 0;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.footer-bottom {
+  background-color: #081737;
+  color: #f7a106;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+}
+
+.footer-bottom a {
+  color: #f7a106;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom .scroll-top {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.footer-bottom .scroll-top a {
+  color: #f7a106;
+  text-decoration: none;
+}
+
     </style>
 </head>
 <body>
@@ -281,9 +345,40 @@ if (isset($_GET['search'])) {
             <?php endif; ?>
         </div>
     </section>
+    <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h4>Locate Us</h4>
+      <p>GCEE in Google Map</p>
+      <p>How to Reach GCEE</p>
+    </div>
+    <div class="footer-column">
+      <h4>Downloads</h4>
+      <p>Academic Schedule</p>
+      <p>Staff Forms</p>
+    </div>
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <!-- Add your links or keep empty -->
+    </div>
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>Government College of Engineering (Autonomous), IRTT,</p>
+      <p>Erode – 638 316, Tamilnadu, India</p>
+      <p>Phone: (0424) 253 9799</p>
+      <p>Email: gceerodeprincipal@gmail.com</p>
+    </div>
+  </div>
 
-    <!-- Back to Home Button at the Bottom -->
-    <a href="index.php" class="back-btn">Back to Home</a>
+  <div class="footer-bottom">
+    <p>
+      Designed & Maintained by <a href="#" target="_blank">GCEE Website Administrators, Department of IT, GCE, Erode</a>
+    </p>
+    <p>© GCEE – All Rights Reserved | Best viewed in Full HD</p>
+    <p class="scroll-top"><a href="#">^</a></p>
+  </div>
+</footer>
+
 
 </body>
 </html>
