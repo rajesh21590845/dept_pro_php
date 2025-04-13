@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Collection</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #4ecdc4;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .logo h1 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #39b4a7;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #4ecdc4, #65c3ba);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #ffe66d;
+            color: #333;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ffd639;
+        }
+
+        /* Papers Section */
+        .papers-section {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .papers-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .papers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .paper-card {
+            background-color: #ff6b6b;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .paper-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .paper-card p {
+            margin: 10px 0;
+        }
+
+        .paper-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Question Paper Collection</h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.php">Home</a>
+            <a href="papers.php">Papers</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.php">Login</a>
+            <a href="register.php">Register</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>COMPREHENSIVE PLATFORM FOR PAST QUESTION PAPERS</h2>
+            <p>Find and download question papers from various subjects and grades.</p>
+            <a href="papers.php" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="papers" class="papers-section">
+        <h2>Latest Question Papers</h2>
+        <div class="papers-grid">
+            <div class="paper-card">
+                <h3>Mathematics - Grade 10</h3>
+                <p>Year: 2023</p>
+                <a href="#" class="btn">Download</a>
+            </div>
+            <div class="paper-card">
+                <h3>Physics - Grade 12</h3>
+                <p>Year: 2022</p>
+                <a href="#" class="btn">Download</a>
+            </div>
+            <!-- Add more paper cards as needed -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Question Paper Collection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
